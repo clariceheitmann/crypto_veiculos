@@ -77,7 +77,7 @@ const consultarNome = async(req,res) =>{
         const cpfDescriptografado = bytes.toString(CryptoJS.enc.Utf8)
 
         return res.status(200).json({
-            codCliente: el.codCliente,
+            codCliente: cliente.codCliente,
             nome: cliente.nome,
             email: cliente.email,
             cpf: cpfDescriptografado,
@@ -91,7 +91,7 @@ const consultarNome = async(req,res) =>{
 }
 
 const atualizar = async(req,res) =>{
-    const id = req.params
+    const id = req.params.id
     const valores = req.body
 
     try{

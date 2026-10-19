@@ -26,7 +26,7 @@ const login = async(req,res) =>{
         }
 
         const duasHoras = 2 * 60 * 60 * 1000
-        const tempoExpiracao = Date.now() = duasHoras
+        const tempoExpiracao = Date.now() + duasHoras
 
         const payload = {
             idCliente: cliente.codCliente,
