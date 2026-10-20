@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/agendamento_atu.js"defer></script>
+    <title>Atualização de Agendamentos</title>
+</head>
+<body>
+    <header>
+        <nav><a href="../index.html">Home</a></nav>
+        <br><hr><br>
+    </header>
+    <h1>Atualizar Agendamento</h1><br><br>
+    <form>
+        <label for="id">Código do Agendamento</label><br>
+        <input type="number" id="id" required><br><br>
+
+        <label for="data">Data</label><br>
+        <input type="date" id="data" required><br><br>
+
+        <label for="tipoServico">Tipo de Serviço</label><br>
+        <select id="tipoServico">
+            <option value="">Escolha</option>
+            <option value="REVISAO">Revisão</option>
+            <option value="MANUTENCAO">Manutenção</option>
+            <option value="INSTALACAO">Instalação</option>
+        </select><br><br>
+
+        <label for="idCliente">Código do Cliente</label><br>
+        <input type="number" id="idCliente" required><br><br>
+
+        <label for="idVeiculo">Código do Veículo</label><br>
+        <input type="number" id="idVeiculo" required><br><br>
+
+        <button id="btn_atualizar">Atualizar</button>
+    </form>
+    <div id="resposta" class="resposta"></div>
+</body>
+</html>

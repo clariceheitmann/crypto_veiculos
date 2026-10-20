@@ -156,7 +156,7 @@ Authorization: {{loginReq.response.body.token}}
     "data": "2026-10-15",
     "tipoServico": "INSTALACAO",
     "idVeiculo": 3,
-    "idCliente": 4
+    "idCliente": 3
 }
 
 ### 17. Atualizar Agendamento 1 (Alterar data para 30/10/2026)

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/cliente_cad.js"defer></script>
+    <title>Cadastro de Clientes</title>
+</head>
+<body>
+    <header>
+        <nav><a href="../index.html">Home</a></nav>
+        <br><hr><br>
+    </header>
+    <h1>Cadastrar Cliente</h1><br><br>
+    <form>
+        <label for="nome">Nome Completo</label><br>
+        <input type="text" id="nome" required><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" id="email" required><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" required><br><br>
+
+        <label for="cpf">CPF</label><br>
+        <input type="text" id="cpf" maxlength="11" required><br><br>
+
+        <label for="endereco">Endereço</label><br>
+        <input type="text" id="endereco" required><br><br>
+
+        <label for="telefone">Telefone</label><br>
+        <input type="text" id="telefone" required><br><br>
+
+        <button id="btn_cadastrar">Cadastrar</button>
+    </form>
+    <div id="resposta" class="resposta"></div>
+</body>
+</html>
